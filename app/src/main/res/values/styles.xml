@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    Themes for API < 21
+    ~~~~~~~~~~~~~~~~~~~
+-->
+<style name="MyCompany.Theme.Colors" parent="MyCompany.Theme.Base">
+    <!-- Customize your theme here. -->
+</style>
+
+<style name="MyCompany.Theme.ActionBar" parent="MyCompany.Theme.Base.ActionBar">
+    <!-- Customize your theme here. -->
+</style>
+
+<style name="MyCompany.Theme.ActionBar.Popup" parent="MyCompany.Theme.Base.ActionBar.Popup">
+    <!-- Customize your theme here. -->
+</style>
+
+<!--
+    Base theme
+    ~~~~~~~~~~
+-->
+<style name="MyCompany.Theme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+    <!-- Status bar and contextual app bar background: 700 -->
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+
+    <!-- App bar background: 500 -->
+    <item name="colorPrimary">@color/primary</item>
+
+    <!-- App bar font color -->
+    <item name="android:textColorPrimary">@color/text_primary</item>
+
+    <item name="android:textColorSecondary">@color/text_secondary</item>
+
+    <!-- Color of secondary elements, such as hamburger and overflow menu icon in app bar -->
+    <item name="colorAccent">@color/accent</item>
+
+    <item name="icon">@android:color/white</item>
+
+    <item name="divider">@color/divider</item>
+
+    <!-- Main window / content background -->
+    <item name="android:windowBackground">@android:color/white</item>
+
+    <!-- Navigation bar background: Does not work on pre API 11 -->
+    <!--<item name="navigationBarColor">@color/navigation_bar</item>-->
+
+</style>
+
+<!--
+    Base ActionBar theme
+    ~~~~~~~~~~~~~~~~~~~~
+-->
+<style name="MyCompany.Theme.Base.ActionBar" parent="ThemeOverlay.AppCompat.Dark">
+    <!-- background -->
+    <item name="android:background">@color/primary</item>
+</style>
+
+<style name="MyCompany.Theme.Base.ActionBar.Popup" parent="ThemeOverlay.AppCompat.Light">
+    <!-- background -->
+    <item name="android:background">@android:color/white</item>
+</style>
+</resources>

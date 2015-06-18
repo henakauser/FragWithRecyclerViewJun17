@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycompany.fragwithrecyclerviewjun17.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/mainfragment_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/mainfragment_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/mainfragment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
+
+        <ScrollView
+            android:layout_width="192sp"
+            android:layout_height="256sp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cars"
+                android:layout_width="192sp"
+                android:layout_height="256dp"
+                android:background="@color/orange"
+                android:clickable="true"
+                android:scrollbars="vertical" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</ScrollView>
